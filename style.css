@@ -98,3 +98,28 @@ header {
     color: #60a5fa;
     text-decoration: underline;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    /* On réduit le padding au minimum (5px haut/bas) */
+    padding: 5px 0; 
+    z-index: 1000;
+    border-top: 1px solid var(--primary); /* Bordure plus fine */
+}
+
+footer p {
+    /* On réduit la taille de la police et les marges du texte interne */
+    font-size: 0.85rem; 
+    margin: 0; 
+}
+
+/* On ajuste la marge du bas du site pour qu'elle soit aussi petite que le footer */
+body {
+    margin-bottom: 40px; 
+}
