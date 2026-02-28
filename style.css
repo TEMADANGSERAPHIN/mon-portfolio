@@ -1,3 +1,44 @@
+/* Réduction significative de l'espace global du header pour le rendre plus compact */
+.hero {
+    padding: 30px 0; /* Réduit de 60px à 30px */
+    border-bottom: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+/* Agrandissement de l'image de profil pour un rendu plus impactant */
+.profile-pic {
+    width: 140px; /* Légèrement plus grand pour plus de présence */
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid #2563eb;
+    object-fit: cover;
+}
+
+/* Réduction des marges autour du texte pour supprimer les espaces vides */
+.hero h1 {
+    margin: 15px 0 5px 0; /* Espace réduit au-dessus et en-dessous */
+    font-size: 1.8rem;
+}
+
+.subtitle {
+    margin: 0 0 10px 0; /* Réduit l'espace avec la bio */
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.bio {
+    max-width: 650px; /* Bio un peu plus étroite pour éviter qu'elle ne soit trop longue */
+    margin: 0 auto 15px auto; /* Marge en bas pour séparer des icônes */
+    font-size: 0.95rem;
+}
+
+/* Espace réduit pour les icônes sociales */
+.social-icons {
+    margin-top: 5px;
+}
+
+/* end */
+
 /* --- STYLES GENERAUX --hkbj- */
 :root {
     --primary-blue: #2563eb;
@@ -64,37 +105,39 @@ h2 {
 /* --- SECTION HERO (PROFIL) --- */
 .hero {
     background: white;
-    padding: 60px 0;
+    padding: 30px 0; /* Espace réduit pour moins de vide */
     text-align: center;
     border-bottom: 1px solid #e2e8f0;
 }
 
 .profile-pic-container {
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Moins d'espace sous l'image */
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* Image de profil ronde */
-    border: 5px solid var(--primary-blue);
+    width: 160px; /* Image un peu plus grande */
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid var(--primary-blue);
     object-fit: cover;
 }
 
 .hero h1 {
-    margin: 0;
+    margin: 5px 0 0 0; /* Marges réduites */
     color: var(--dark-blue);
+    font-size: 2rem;
 }
 
 .subtitle {
     color: var(--primary-blue);
     font-weight: bold;
-    margin-top: 5px;
+    margin: 5px 0 10px 0; /* Moins d'espace entre le sous-titre et la bio */
 }
 
 .bio {
-    max-width: 700px;
-    margin: 20px auto;
+    max-width: 600px;
+    margin: 0 auto 15px auto; /* Moins d'espace sous la bio */
+    font-size: 0.95rem;
 }
 
 .social-icons img {
