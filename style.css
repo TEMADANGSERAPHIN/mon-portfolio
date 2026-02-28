@@ -1,125 +1,72 @@
 :root {
-    --primary: #2563eb;
-    --dark: #0f172a;
-    --bg: #f8fafc;
+    --primary: #2563eb;
+    --dark: #0f172a;
+    --bg: #f8fafc;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    background-color: var(--bg);
-    color: #1e293b;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding-bottom: 50px; /* Espace pour le footer */
+    background-color: var(--bg);
+    color: #1e293b;
+    min-height: 100vh;
+    position: relative;
 }
 
 .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-/* Header plus compact */
 header {
-    background: var(--dark);
-    color: white;
-    padding: 40px 0;
+    background: var(--dark);
+    color: white;
+    padding: 40px 0;
 }
 
 .header-flex {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 .profile-img {
-    width: 130px;
-    height: 130px;
-    border-radius: 15px; /* Carré arrondi plus moderne */
-    object-fit: cover;
-    border: 3px solid var(--primary);
+    width: 130px;
+    height: 130px;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 3px solid var(--primary);
 }
 
-/* Layout en deux colonnes */
 .main-layout {
-    display: grid;
-    grid-template-columns: 2fr 1fr; /* Projets large, Études étroit */
-    gap: 40px;
-    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
 }
 
-@media (max-width: 768px) {
-    .main-layout, .header-flex {
-        grid-template-columns: 1fr;
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-.project-card {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    border: 1px solid #e2e8f0;
-    transition: 0.3s;
-}
-
-.project-card:hover {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-}
-
-.sidebar {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    height: fit-content;
-    position: sticky; /* L'élément reste à l'écran quand on scroll */
-    top: 20px;
-}
-
-.info-block h2 {
-    font-size: 1.2rem;
-    color: var(--primary);
-    border-bottom: 2px solid var(--bg);
-    padding-bottom: 5px;
-}
-
-.item { margin-bottom: 15px; font-size: 0.9rem; }
-
-.btn {
-    background: var(--primary);
-    color: white;
-    padding: 8px 15px;
-    text-decoration: none;
-    border-radius: 6px;
-    display: inline-block;
-}
-
-.btn-alt {
-    color: #60a5fa;
-    text-decoration: underline;
-}
-
+/* Footer positionné normalement (pas en fixed) */
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: var(--dark);
-    color: white;
-    text-align: center;
-    /* On réduit le padding au minimum (5px haut/bas) */
-    padding: 5px 0; 
-    z-index: 1000;
-    border-top: 1px solid var(--primary); /* Bordure plus fine */
+    width: 100%;
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    border-top: 1px solid var(--primary);
 }
 
-footer p {
-    /* On réduit la taille de la police et les marges du texte interne */
-    font-size: 0.85rem; 
-    margin: 0; 
+/* Media Query corrigé */
+@media (max-width: 768px) {
+    .main-layout {
+        grid-template-columns: 1fr;
+    }
+    .header-flex {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
-/* On ajuste la marge du bas du site pour qu'elle soit aussi petite que le footer */
-body {
-    margin-bottom: 40px; 
-}
+/* ... Reste de tes styles (project-card, sidebar, etc.) ... */
