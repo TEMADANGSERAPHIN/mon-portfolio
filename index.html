@@ -45,10 +45,19 @@
             <div class="projects-grid">
                 
                 <div class="project-card">
-                    <img src="im1ages.jpg" alt="Détection de Fraude" class="project-image">
+                    <img src="images/immobilier.jpg" alt="Prédiction Immobilier" class="project-image">
                     <div class="project-content">
-                        <h3>Détection de fraude de paiement en ligne</h3>
-                        <p>Identifier des transactions frauduleuses (0,17%) sans dégrader l'expérience utilisateur. Feature Engineering, SMOTE, XGBoost (AUPRC: 0.84).</p>
+                        <h3>Prédiction des prix de l'immobilier</h3>
+                        <p><strong>Le défi :</strong> Sur un marché fluctuant, aider les acheteurs à estimer la valeur réelle d'une propriété en fonction de ses caractéristiques.</p>
+                        
+                        <p><strong>Approche :</strong></p>
+                        <ul style="padding-left: 20px; font-size: 0.85rem; color: #475569;">
+                            <li><strong>Nettoyage :</strong> Traitement des valeurs manquantes et suppression des outliers.</li>
+                            <li><strong>Feature Engineering :</strong> Création de la variable "âge de la maison" pour mieux refléter la dépréciation.</li>
+                            <li><strong>Modélisation :</strong> Comparaison de modèles, choix du <em>Random Forest Regressor</em> pour sa robustesse.</li>
+                        </ul>
+                        
+                        <p><strong>Résultats :</strong> Le modèle final a atteint un score de $R^2 = 0.85$, expliquant 85% de la variance des prix.</p>
                     </div>
                 </div>
 
