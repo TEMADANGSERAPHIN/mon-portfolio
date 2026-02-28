@@ -45,19 +45,25 @@
             <div class="projects-grid">
                 
                 <div class="project-card">
-                    <img src="images/immobilier.jpg" alt="Prédiction Immobilier" class="project-image">
+                    <img src="im1ages.jpg" alt="Détection de Fraude Bancaire" class="project-image">
                     <div class="project-content">
-                        <h3>Prédiction des prix de l'immobilier</h3>
-                        <p><strong>Le défi :</strong> Sur un marché fluctuant, aider les acheteurs à estimer la valeur réelle d'une propriété en fonction de ses caractéristiques.</p>
+                        <h3>Projet : Détection de Fraude Bancaire (Stage CodSoft)</h3>
+                        <p>Ce projet démontre ma capacité à gérer des données fortement déséquilibrées dans un contexte bancaire réel.</p>
                         
-                        <p><strong>Approche :</strong></p>
-                        <ul style="padding-left: 20px; font-size: 0.85rem; color: #475569;">
-                            <li><strong>Nettoyage :</strong> Traitement des valeurs manquantes et suppression des outliers.</li>
-                            <li><strong>Feature Engineering :</strong> Création de la variable "âge de la maison" pour mieux refléter la dépréciation.</li>
-                            <li><strong>Modélisation :</strong> Comparaison de modèles, choix du <em>Random Forest Regressor</em> pour sa robustesse.</li>
+                        <p><strong>Le défi (Situation) :</strong><br>
+                        Identifier des transactions frauduleuses (représentant seulement 0,17% du dataset) sans dégrader l'expérience utilisateur, dans un environnement financier complexe.</p>
+                        
+                        <p><strong>Mon approche (Tâche & Actions) :</strong></p>
+                        <ul>
+                            <li><strong>Nettoyage & Préparation :</strong> Nettoyage, traitement et Feature Engineering pour isoler les signaux faibles des transactions suspectes.</li>
+                            <li><strong>Gestion du déséquilibre :</strong> Application de la technique <em>SMOTE</em> pour rééquilibrer les classes et éviter que le modèle ne ignore les fraudes.</li>
+                            <li><strong>Modélisation :</strong> Optimisation d'un modèle <em>XGBoost</em> pour maximiser la précision de la classification.</li>
                         </ul>
                         
-                        <p><strong>Résultats :</strong> Le modèle final a atteint un score de $R^2 = 0.85$, expliquant 85% de la variance des prix.</p>
+                        <p><strong>Résultats (Impact) :</strong><br>
+                        Le modèle final a atteint une performance solide avec un AUPRC de $0.84$, permettant une identification fiable des fraudes malgré leur rareté.</p>
+                        
+                        <p><strong>Outils utilisés :</strong> Python, Pandas, Scikit-Learn, XGBoost, SMOTE.</p>
                     </div>
                 </div>
 
