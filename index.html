@@ -45,25 +45,26 @@
             <div class="projects-grid">
                 
                 <div class="project-card">
-                    <img src="im1ages.jpg" alt="Détection de Fraude Bancaire" class="project-image">
+                    <img src="images/fraude.jpg" alt="Détection de Fraude Bancaire" class="project-image">
                     <div class="project-content">
-                        <h3>Projet : Détection de Fraude Bancaire (Stage CodSoft)</h3>
-                        <p>Ce projet démontre ma capacité à gérer des données fortement déséquilibrées dans un contexte bancaire réel.</p>
+                        <h3>Projet : Détection de Fraude Bancaire</h3>
                         
-                        <p><strong>Le défi (Situation) :</strong><br>
-                        Identifier des transactions frauduleuses (représentant seulement 0,17% du dataset) sans dégrader l'expérience utilisateur, dans un environnement financier complexe.</p>
+                        <p>Développement d'un système de prédiction XGBoost pour identifier des transactions frauduleuses (0,17%) dans un flux bancaire.</p>
                         
-                        <p><strong>Mon approche (Tâche & Actions) :</strong></p>
-                        <ul>
-                            <li><strong>Nettoyage & Préparation :</strong> Nettoyage, traitement et Feature Engineering pour isoler les signaux faibles des transactions suspectes.</li>
-                            <li><strong>Gestion du déséquilibre :</strong> Application de la technique <em>SMOTE</em> pour rééquilibrer les classes et éviter que le modèle ne ignore les fraudes.</li>
-                            <li><strong>Modélisation :</strong> Optimisation d'un modèle <em>XGBoost</em> pour maximiser la précision de la classification.</li>
-                        </ul>
-                        
-                        <p><strong>Résultats (Impact) :</strong><br>
-                        Le modèle final a atteint une performance solide avec un AUPRC de $0.84$, permettant une identification fiable des fraudes malgré leur rareté.</p>
-                        
-                        <p><strong>Outils utilisés :</strong> Python, Pandas, Scikit-Learn, XGBoost, SMOTE.</p>
+                        <details>
+                            <summary style="cursor: pointer; color: #2563eb; font-weight: bold;">Lire la suite...</summary>
+                            <p><strong>Le défi :</strong> Identifier les transactions suspectes sans dégrader l'expérience utilisateur.</p>
+                            
+                            <p><strong>Mon approche :</strong></p>
+                            <ul>
+                                <li><strong>Nettoyage :</strong> Feature Engineering poussé pour isoler les signaux faibles.</li>
+                                <li><strong>SMOTE :</strong> Rééquilibrage des classes pour traiter le déséquilibre des données.</li>
+                                <li><strong>Modélisation :</strong> Optimisation d'un modèle <em>XGBoost</em>.</li>
+                            </ul>
+                            
+                            <p><strong>Résultat :</strong> AUPRC de $0.84$.</p>
+                            <p><strong>Outils :</strong> Python, Scikit-Learn, XGBoost.</p>
+                        </details>
                     </div>
                 </div>
 
