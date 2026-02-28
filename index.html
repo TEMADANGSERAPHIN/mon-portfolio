@@ -1,160 +1,91 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | TEMADANG SERAPHIN</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | TEMADANG SERAPHIN</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="hero-header">
-        <div class="container header-flex">
-            <div class="profile-wrapper">
-                <img src="votre-photo.jpg" alt="TEMADANG SERAPHIN" class="profile-img">
-                <div class="status-badge">Disponible</div>
-            </div>
-            
-            <div class="header-text">
-                
-                <h1>TEMADANG SERAPHIN</h1>
-                <div class="top-meta">
-                    <span class="location">📍 Marseille, France</span>
-                    <span class="separator">|</span>
-                    <span class="email">📧 seraphinluminy@gmail.com</span>
-                </div>
-                <h2 class="job-title">Futur Data Scientist & Développeur IA</h2>
-                <p class="tagline-pro">
-                    Etudiant en <strong>Big Data & Statistiques</strong>. Passionné par la transformation de données brutes en décisions stratégiques.
-                </p>
-    
-                <div class="search-info">
-                    <div class="search-tag stage">🎯 Stage (3-6 mois)</div>
-                    <div class="search-tag date">📅 Dès Avril 2026</div>
-                    <div class="search-tag goal">🚀 Data Scientist / Data Analyst </div>
-                </div>
-    
-                <div class="header-actions">
-                    <a href="https://www.linkedin.com/in/seraphin-temadang/" class="btn-primary" target="_blank">
-                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="15"> LinkedIn
-                    </a>
-                    <a href="mailto:seraphinluminy@gmail.com" class="btn-secondary">Me contacter</a>
-                </div>
-            </div>
-        </div>
-    </header>
+    <nav class="navbar">
+        <div class="container navbar-flex">
+            <div class="logo">TEMADANG SERAPHIN</div>
+            <div class="nav-links">
+                <a href="#">Accueil</a>
+                <a href="#projets">Projets</a>
+                <a href="#">CV</a>
+                <a href="#" class="btn-contact">Contactez-moi</a>
+            </div>
+        </div>
+    </nav>
 
-    <div class="container main-layout">
-        
-        <main class="projects-section">
-            <h2>🚀 Mes Réalisations</h2>
-            <div class="project-grid">
-                
-                <div class="project-card" style="border-top: 4px solid #2ecc71;">
-                    <h3>🛡️ Détection de Fraude Bancaire (Machine Learning)</h3>
-                    <p><strong>Problématique :</strong> Identifier des transactions frauduleuses (0,17%) au sein d'un flux massif de données bancaires sans dégrader l'expérience utilisateur.</p>
-                    
-                    <div class="contribution-box">
-                        <strong>🛠️ Ma Contribution :</strong>
-                        <ul>
-                            <li><strong>Feature Engineering :</strong> Création de variables contextuelles (vélocité des transactions, analyse temporelle cyclique).</li>
-                            <li><strong>Data Balancing :</strong> Traitement du déséquilibre de classes via l'algorithme <strong>SMOTE</strong> (Oversampling intelligent).</li>
-                            <li><strong>Modélisation :</strong> Implémentation de <strong>XGBoost</strong> et optimisation de la métrique <strong>AUPRC (Score: 0.84)</strong>.</li>
-                        </ul>
-                    </div>
+    <header class="hero">
+        <div class="container hero-flex">
+            <div class="profile-pic-container">
+                <img src="images/votre-photo.jpg" alt="TEMADANG SERAPHIN" class="profile-pic">
+            </div>
+            <h1>TEMADANG SERAPHIN</h1>
+            <p class="subtitle">Etudiant en Data Scientist & Développeur IA</p>
+            <p class="bio">
+                Passionné par la science des données, je suis à la recherche d'un stage de trois à six mois.
+                Compétences en Python, machine learning et analyse de données. Marseille, France.
+            </p>
+            <div class="social-icons">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
+            </div>
+        </div>
+    </header>
 
-                    <div class="skills-box">
-                        <strong>✅ Compétences Acquises :</strong>
-                        <ul>
-                            <li><strong>Data Science :</strong> Python, Scikit-Learn, Imbalanced-learn.</li>
-                            <li><strong>Algorithmique :</strong> Gradient Boosting, Métriques de performance avancées.</li>
-                        </ul>
-                    </div>
-                    <a href="https://github.com/TEMADANGSERAPHIN/PROJET-DETECTION-DE-FRAUD-BANCAIRE" class="btn" target="_blank">Code source</a>
-                </div>
+    <section id="projets" class="projets-section">
+        <div class="container">
+            <h2>Mes projets 🚀</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <img src="images/fraude.jpg" alt="Détection de Fraude" class="project-image">
+                    <div class="project-content">
+                        <h3>Détection de fraude de paiement en ligne</h3>
+                        <p>Identifier des transactions frauduleuses (0,17%) sans dégrader l'expérience utilisateur. Feature Engineering, SMOTE, XGBoost (AUPRC: 0.84).</p>
+                    </div>
+                </div>
 
-                <div class="project-card" style="border-top: 4px solid #f1c40f;">
-                    <h3>🌾 Modélisation Maladie du Riz (Deep Learning)</h3>
-                    <p><strong>Problématique :</strong> Sécuriser les récoltes en automatisant le diagnostic agricole par reconnaissance d'images sur mobile.</p>
+                <div class="project-card">
+                    <img src="images/maladie-riz.jpg" alt="Maladie du Riz" class="project-image">
+                    <div class="project-content">
+                        <h3>Modélisation Maladie du Riz (Deep Learning)</h3>
+                        <p>Sécuriser les récoltes en automatisant le diagnostic agricole par reconnaissance d'images. Data Augmentation, CNN, PyTorch.</p>
+                    </div>
+                </div>
 
-                    <div class="contribution-box">
-                        <strong>🛠️ Ma Contribution :</strong>
-                        <ul>
-                            <li><strong>Preprocessing :</strong> Nettoyage, redimensionnement et Data Augmentation d'un dataset d'images complexes.</li>
-                            <li><strong>Architecture :</strong> Entraînement et fine-tuning de réseaux de neurones convolutifs (<strong>CNN</strong>) avec <strong>PyTorch</strong>.</li>
-                            <li><strong>Validation :</strong> Analyse des courbes de perte et matrices de confusion pour garantir la précision du diagnostic.</li>
-                        </ul>
-                    </div>
+                <div class="project-card">
+                    <img src="images/gestion-parc.jpg" alt="Gestion de Parc" class="project-image">
+                    <div class="project-content">
+                        <h3>Architecture de Gestion de Parc (SNE)</h3>
+                        <p>Modernisation du suivi des actifs numériques pour le Trésor Public. Conception MLD/MPD, application de monitoring.</p>
+                    </div>
+                </div>
 
-                    <div class="skills-box">
-                        <strong>✅ Compétences Acquises :</strong>
-                        <ul>
-                            <li><strong>Computer Vision :</strong> Deep Learning, PyTorch, Traitement d'images.</li>
-                            <li><strong>Optimisation :</strong> Hyper-paramétrage de modèles de neurones.</li>
-                        </ul>
-                    </div>
-                    <a href="#" class="btn" target="_blank">Code source</a>
-                </div>
-        
-                <div class="project-card" style="border-top: 4px solid #3498db;">
-                    <h3>💻 Architecture de Gestion de Parc (SNE)</h3>
-                    <p><strong>Entreprise :</strong> Trésor Public (Stage Informatique)</p>
-                    <p><strong>Objectif :</strong> Modernisation du suivi des actifs numériques et optimisation du cycle de vie matériel.</p>
-                    <ul>
-                        <li><strong>Analyse & Modélisation :</strong> Conception du schéma relationnel (<strong>MLD/MPD</strong>) pour l'intégrité des données.</li>
-                        <li><strong>Développement :</strong> Application centralisée de monitoring des stocks et suivi des interventions.</li>
-                        <li><strong>Data Reporting :</strong> Dashboard de pilotage pour l'inventaire et les prévisions de renouvellement.</li>
-                    </ul>
-                    <p><small><em>Compétences : SQL Avancé, Modélisation relationnelle, Gestion de projet SI.</em></small></p>
-                    <a href="#" class="btn" target="_blank">Détails du projet</a>
-                </div>
-                
-            </div>
-        </main>
+            </div>
+        </div>
+    </section>
 
-        <aside class="sidebar">
-            <section class="info-block">
-                <h2>🎓 Études</h2>
-                <div class="item">
-                    <strong>LP Big Data & Statistiques</strong>
-                    <p>Aix-Marseille Université (2025-2026)</p>
-                </div>
-                
-                <div class="item">
-                    <strong>LP Développeur de Données</strong>
-                    <p>Université de Ndjamena (2022-2023)</p>
-                </div>
-
-                <div class="item">
-                    <strong>Licence en Mathématiques</strong>
-                    <p>Université de Ndjamena (2017-2020)</p>
-                </div>
-                
-            </section>
-
-            <section class="info-block">
-                <h2>💼 Stages Récents</h2>
-                <div class="item">
-                    <strong>Stage Data Science | Codsoft</strong>
-                    <p>2024 - Spécialisation en détection d'anomalies bancaires et ML prédictif.</p>
-                </div>
-                <div class="item">
-                    <strong>Stage Informatique | Trésor Public</strong>
-                    <p>2024 - Analyse de données et architecture de gestion de parc.</p>
-                </div>
-                <div class="item">
-                    <strong>Stage Informatique | Société National d'Electricité au Tchad(SNE)</strong>
-                    <p>2024 -Analyse de donnée.</p>
-                    <p> Création d'une application</p>.</p>
-                </div>
-            </section>
-        </aside>
-
-    </div>
-
-    <footer>
-        <p>Recherche de stage (3-6 mois) - Disponible immédiatement</p>
-    </footer>
+    <section class="outils-section">
+        <div class="container">
+            <h2>Mes outils 🧳</h2>
+            <div class="skills-grid">
+                <span class="skill-badge badge-tech">Python</span>
+                <span class="skill-badge badge-tech">SQL</span>
+                <span class="skill-badge badge-tech">Machine Learning</span>
+                <span class="skill-badge badge-tech">PyTorch</span>
+                <span class="skill-badge badge-tech">Scikit-Learn</span>
+                <span class="skill-badge badge-tech">XGBoost</span>
+                <span class="skill-badge badge-soft">Gestion de Projet</span>
+                <span class="skill-badge badge-soft">Communication</span>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
