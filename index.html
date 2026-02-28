@@ -2,52 +2,57 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | TEMADANG SERAPHIN</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav class="container nav-bar">
+    <header class="navbar">
+        <div class="container nav-content">
             <div class="logo">TEMADANG SERAPHIN</div>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#contact">Contactez-moi</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <a href="#accueil">Accueil</a>
+                <a href="#projets">Projets</a>
+                <a href="#cv">CV</a>
+                <a href="#contact" class="nav-contact">Contactez-moi 📞</a>
+            </nav>
+        </div>
     </header>
 
     <section id="accueil" class="hero">
-        <div class="container hero-content">
-            <img src="votre-photo.jpg" alt="Photo" class="profile-img">
+        <div class="container hero-inner">
+            <img src="votre-photo.jpg" alt="Photo de profil" class="profile-img">
             <h1>TEMADANG SERAPHIN</h1>
-            <h3>Étudiant en Licence Professionnelle Métiers du Décisionnel et de la Statistique.</h3>
-            <p>Je suis passionné par la science des données, je recherche un stage accademique en Data</p>
+            <p class="subtitle">Étudiant en Licence Professionnelle Métiers du Décisionnel et de la Statistique.</p>
+            <p class="bio">Je suis passionné par la science des données, je recherche un stage académique en Data.</p>
+            <div class="social-links">
+                <a href="#">LinkedIn</a> | <a href="#">GitHub</a>
+            </div>
         </div>
     </section>
 
     <section id="projets" class="container">
-        <h2>Mes projets 🚀</h2>
+        <h2 class="section-title">Mes projets 🚀</h2>
         <div class="project-grid">
+            
             <div class="project-card">
-                <img src="https://via.placeholder.com/300x150" alt="Projet">
                 <h3>Détection de fraude</h3>
-                <p>Brève description du projet ici...</p>
-                <a href="#" class="btn-card">Voir le code</a>
+                <p>Brève description du projet : analyse de transactions bancaires pour identifier les fraudes.</p>
+                <a href="#" class="btn-source">Voir le code</a>
             </div>
+
             <div class="project-card">
-                <img src="https://via.placeholder.com/300x150" alt="Projet">
                 <h3>Analyse de données</h3>
-                <p>Brève description du projet ici...</p>
-                <a href="#" class="btn-card">Voir le code</a>
+                <p>Brève description du projet : visualisation et traitement de données RH.</p>
+                <a href="#" class="btn-source">Voir le code</a>
             </div>
-        </div>
+            
+            </div>
     </section>
 
     <section id="outils" class="container">
-        <h2>Mes outils 🧰</h2>
+        <h2 class="section-title">Mes outils 🧰</h2>
         <div class="tags-container">
             <span class="tag">Python</span>
             <span class="tag">SQL</span>
@@ -57,9 +62,11 @@
     </section>
 
     <footer id="contact">
-        <p>TEMADANG SERAPHIN</p>
-        <p>Email: pataletseraphin@gmail.com</p>
-        <p>Contact: +33 7 79 79 32 81</p>
+        <div class="container">
+            <h3>Contactez-moi 📩</h3>
+            <p>Email : seraphinluminy@gmail.com</p>
+            <p class="copyright">© 2026 TEMADANG SERAPHIN</p>
+        </div>
     </footer>
 
 </body>
