@@ -2,158 +2,63 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | TEMADANG SERAPHIN</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="hero-header">
-        <div class="container header-flex">
-            <div class="profile-wrapper">
-                <img src="votre-photo.jpg" alt="TEMADANG SERAPHIN" class="profile-img">
-                <div class="status-badge">Disponible</div>
-            </div>
-            
-            <div class="header-text">
-                
-                <h1>TEMADANG SERAPHIN</h1>
-                <div class="top-meta">
-                    <span class="location">📍 Marseille, France</span>
-                    <span class="separator">|</span>
-                    <span class="email">📧 seraphinluminy@gmail.com</span>
-                </div>
-                <h2 class="job-title">Futur Data Scientist & Développeur IA</h2>
-                <p class="tagline-pro">
-                    Etudiant en <strong>Big Data & Statistiques</strong>. Passionné par la transformation de données brutes en décisions stratégiques.
-                </p>
-    
-                <div class="search-info">
-                    <div class="search-tag stage">🎯 Stage (3-6 mois)</div>
-                    <div class="search-tag date">📅 Dès Avril 2026</div>
-                    <div class="search-tag goal">🚀 Data Scientist / Data Analyst </div>
-                </div>
-    
-                <div class="header-actions">
-                    <a href="https://www.linkedin.com/in/seraphin-temadang/" class="btn-primary" target="_blank">
-                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="15"> LinkedIn
-                    </a>
-                    <a href="mailto:seraphinluminy@gmail.com" class="btn-secondary">Me contacter</a>
-                </div>
-            </div>
-        </div>
+    <header>
+        <nav class="container nav-bar">
+            <div class="logo">AMADOU MBODJ</div>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#contact">Contactez-moi</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container main-layout">
-        
-        <main class="projects-section">
-            <h2>🚀 Mes Réalisations</h2>
-            <div class="project-grid">
-                
-                <div class="project-card" style="border-top: 4px solid #2ecc71;">
-                    <h3>🛡️ Détection de Fraude Bancaire (Machine Learning)</h3>
-                    <p><strong>Problématique :</strong> Identifier des transactions frauduleuses (0,17%) au sein d'un flux massif de données bancaires sans dégrader l'expérience utilisateur.</p>
-                    
-                    <div class="contribution-box">
-                        <strong>🛠️ Ma Contribution :</strong>
-                        <ul>
-                            <li><strong>Feature Engineering :</strong> Création de variables contextuelles (vélocité des transactions, analyse temporelle cyclique).</li>
-                            <li><strong>Data Balancing :</strong> Traitement du déséquilibre de classes via l'algorithme <strong>SMOTE</strong> (Oversampling intelligent).</li>
-                            <li><strong>Modélisation :</strong> Implémentation de <strong>XGBoost</strong> et optimisation de la métrique <strong>AUPRC (Score: 0.84)</strong>.</li>
-                        </ul>
-                    </div>
+    <section id="accueil" class="hero">
+        <div class="container hero-content">
+            <img src="https://via.placeholder.com/150" alt="Photo" class="profile-img">
+            <h1>AMADOU MBODJ</h1>
+            <h3>Etudiant en Data/IA</h3>
+            <p>Je suis passionné par la science des données, je recherche un stage... [Ton texte ici]</p>
+        </div>
+    </section>
 
-                    <div class="skills-box">
-                        <strong>✅ Compétences Acquises :</strong>
-                        <ul>
-                            <li><strong>Data Science :</strong> Python, Scikit-Learn, Imbalanced-learn.</li>
-                            <li><strong>Algorithmique :</strong> Gradient Boosting, Métriques de performance avancées.</li>
-                        </ul>
-                    </div>
-                    <a href="https://github.com/TEMADANGSERAPHIN/PROJET-DETECTION-DE-FRAUD-BANCAIRE" class="btn" target="_blank">Code source</a>
-                </div>
-
-                <div class="project-card" style="border-top: 4px solid #f1c40f;">
-                    <h3>🌾 Modélisation Maladie du Riz (Deep Learning)</h3>
-                    <p><strong>Problématique :</strong> Sécuriser les récoltes en automatisant le diagnostic agricole par reconnaissance d'images sur mobile.</p>
-
-                    <div class="contribution-box">
-                        <strong>🛠️ Ma Contribution :</strong>
-                        <ul>
-                            <li><strong>Preprocessing :</strong> Nettoyage, redimensionnement et Data Augmentation d'un dataset d'images complexes.</li>
-                            <li><strong>Architecture :</strong> Entraînement et fine-tuning de réseaux de neurones convolutifs (<strong>CNN</strong>) avec <strong>PyTorch</strong>.</li>
-                            <li><strong>Validation :</strong> Analyse des courbes de perte et matrices de confusion pour garantir la précision du diagnostic.</li>
-                        </ul>
-                    </div>
-
-                    <div class="skills-box">
-                        <strong>✅ Compétences Acquises :</strong>
-                        <ul>
-                            <li><strong>Computer Vision :</strong> Deep Learning, PyTorch, Traitement d'images.</li>
-                            <li><strong>Optimisation :</strong> Hyper-paramétrage de modèles de neurones.</li>
-                        </ul>
-                    </div>
-                    <a href="#" class="btn" target="_blank">Code source</a>
-                </div>
-        
-                <div class="project-card" style="border-top: 4px solid #3498db;">
-                    <h3>💻 Architecture de Gestion de Parc (SNE)</h3>
-                    <p><strong>Entreprise :</strong> Trésor Public (Stage Informatique)</p>
-                    <p><strong>Objectif :</strong> Modernisation du suivi des actifs numériques et optimisation du cycle de vie matériel.</p>
-                    <ul>
-                        <li><strong>Analyse & Modélisation :</strong> Conception du schéma relationnel (<strong>MLD/MPD</strong>) pour l'intégrité des données.</li>
-                        <li><strong>Développement :</strong> Application centralisée de monitoring des stocks et suivi des interventions.</li>
-                        <li><strong>Data Reporting :</strong> Dashboard de pilotage pour l'inventaire et les prévisions de renouvellement.</li>
-                    </ul>
-                    <p><small><em>Compétences : SQL Avancé, Modélisation relationnelle, Gestion de projet SI.</em></small></p>
-                    <a href="#" class="btn" target="_blank">Détails du projet</a>
-                </div>
-                
+    <section id="projets" class="container">
+        <h2>Mes projets 🚀</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x150" alt="Projet">
+                <h3>Détection de fraude</h3>
+                <p>Brève description du projet ici...</p>
+                <a href="#" class="btn-card">Voir le code</a>
             </div>
-        </main>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x150" alt="Projet">
+                <h3>Analyse de données</h3>
+                <p>Brève description du projet ici...</p>
+                <a href="#" class="btn-card">Voir le code</a>
+            </div>
+        </div>
+    </section>
 
-        <aside class="sidebar">
-            <section class="info-block">
-                <h2>🎓 Études</h2>
-                <div class="item">
-                    <strong>LP Big Data & Statistiques</strong>
-                    <p>Aix-Marseille Université (2025-2026)</p>
-                </div>
-                
-                <div class="item">
-                    <strong>LP Développeur de Données</strong>
-                    <p>Université de Ndjamena (2022-2023)</p>
-                </div>
+    <section id="outils" class="container">
+        <h2>Mes outils 🧰</h2>
+        <div class="tags-container">
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Scikit-learn</span>
+        </div>
+    </section>
 
-                <div class="item">
-                    <strong>Licence en Mathématiques</strong>
-                    <p>Université de Ndjamena (2017-2020)</p>
-                </div>
-                
-            </section>
-
-            <section class="info-block">
-                <h2>💼 Stages Récents</h2>
-                <div class="item">
-                    <strong>Stage Data Science | Codsoft</strong>
-                    <p>2024 - Spécialisation en détection d'anomalies bancaires et ML prédictif.</p>
-                </div>
-                <div class="item">
-                    <strong>Stage Informatique | Trésor Public</strong>
-                    <p>2024 - Analyse de données et architecture de gestion de parc.</p>
-                </div>
-                <div class="item">
-                    <strong>Stage Informatique | Société National d'Electricité au Tchad(SNE)</strong>
-                    <p>2024 -Analyse de donnée.</p>
-                    <p> Création d'une application</p>.</p>
-                </div>
-            </section>
-        </aside>
-
-    </div>
-
-    <footer>
-        <p>Recherche de stage (3-6 mois) - Disponible immédiatement</p>
+    <footer id="contact">
+        <p>AMADOU MBODJ ©2026</p>
+        <p>Email: amadoumbodj2294@gmail.com</p>
     </footer>
 
 </body>
