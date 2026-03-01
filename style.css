@@ -219,3 +219,26 @@ h2 {
 .badge-soft {
     background-color: var(--tag-soft-bg); /* Bleu pour les soft skills */
 }
+
+/* Style de base pour tous les badges */
+.skill-badge {
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin: 5px;
+    display: inline-block;
+    color: white;
+}
+
+/* Couleurs par catégorie */
+.badge-data { background-color: #3b82f6; }    /* Bleu: Data & IA */
+.badge-db   { background-color: #10b981; }    /* Vert: Bases de données */
+.badge-bi   { background-color: #8b5cf6; }    /* Violet: BI & Analyse */
+.badge-dev  { background-color: #f59e0b; }    /* Orange: Outils & Méthodes */
+
+/* Optionnel: ajout d'un petit effet au survol */
+.skill-badge:hover {
+    filter: brightness(1.2);
+    cursor: default;
+}
