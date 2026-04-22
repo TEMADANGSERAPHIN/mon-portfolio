@@ -22,26 +22,53 @@
     </nav>
 
     <header class="hero">
-        <div class="container hero-flex">
-            <div class="profile-pic-container">
-                <img src="votre-photo.jpg" alt="TEMADANG SERAPHIN" class="profile-pic">
-            </div>
-            <div class="hero-content">
-                <h1>TEMADANG SERAPHIN</h1>
-                <p class="subtitle">Étudiant en Licence Professionnelle Métiers du Décisionnel et de la Statistique</p>
-                <p class="subsubtitle">Parcours : Informatique décisionnelle, Statistiques et Big Data</p>
-                <p class="subtitle">Aix-Marseille Université (2025 – 2026)</p>
-                <p class="bio">
-                    Actuellement à la recherche d'un stage académique de trois à six mois dans les domaines de l'analyse de données et de la Data Science. 
-                    Mobile sur toute la France, avec une préférence pour Marseille et ses environs.
-                </p>
-                
-            </div>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/seraphin-stage-data-analyst/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
-                <a href="https://github.com/TEMADANGSERAPHIN"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
-            </div>
+      <div class="hero-particles" id="particles"></div>
+      <div class="container hero-flex">
+    
+        <div class="profile-pic-container">
+          <div class="profile-ring">
+            <img src="votre-photo.jpg" alt="TEMADANG SERAPHIN" class="profile-pic"
+                 onerror="this.outerHTML='<div class=\'profile-initials\'>TS</div>'">
+          </div>
+          <div class="online-badge"></div>
         </div>
+    
+        <div class="hero-content">
+          <h1>TEMADANG <span class="name-gradient">SERAPHIN</span></h1>
+          <p class="subtitle typing-container">
+            <span id="typed"></span><span class="cursor"></span>
+          </p>
+          <p class="subsubtitle">Parcours : Informatique décisionnelle, Statistiques et Big Data</p>
+          <div class="hero-location">
+            📍 Aix-Marseille Université · 2025–2026 · Mobile France
+          </div>
+          <p class="bio">
+            Actuellement à la recherche d'un stage académique de 3 à 6 mois en analyse de données et Data Science.
+            Mobile sur toute la France, avec une préférence pour Marseille et ses environs.
+          </p>
+          <div class="hero-tags">
+            <span class="tag">Data Science</span>
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Excel / TCD</span>
+            <span class="tag">Big Data</span>
+            <span class="tag">Statistiques</span>
+          </div>
+          <div class="hero-available">
+            <div class="avail-dot"></div>
+            Disponible pour un stage · 3 à 6 mois
+          </div>
+        </div>
+    
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/seraphin-stage-data-analyst/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+          </a>
+          <a href="https://github.com/TEMADANGSERAPHIN" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+          </a>
+        </div>
+      </div>
     </header>
 
     <section id="projets" class="projets-section">
