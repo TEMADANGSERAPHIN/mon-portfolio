@@ -50,6 +50,39 @@
             <div class="projects-grid">
 
                 <div class="project-card">
+                    <img src="webwatch.jpg" alt="WebWatch Monitoring" class="project-image">
+                    <div class="project-content">
+                        <h3>WebWatch — Outil de Web Monitoring Intelligent</h3>
+                        <p>Création d'une application web complète de surveillance de sites internet avec détection automatique des changements par intelligence artificielle.</p>
+                        
+                        <details>
+                            <summary style="cursor: pointer; color: #2563eb; font-weight: bold;">Lire la suite...</summary>
+                            <p><strong>Le défi :</strong> Construire un système capable de surveiller plusieurs URLs en temps réel, de détecter les moindres modifications de contenu et d'en produire un résumé intelligible grâce à l'IA.</p>
+                            
+                            <p><strong>Mon approche :</strong></p>
+                            <ul>
+                                <li><strong>Scraping :</strong> Extraction automatique du contenu de chaque page en Markdown via <em>Firecrawl API</em>.</li>
+                                <li><strong>Versioning :</strong> Stockage et comparaison des snapshots successifs dans une base <em>Redis (Upstash)</em> pour détecter les différences.</li>
+                                <li><strong>Analyse IA :</strong> Utilisation de <em>GPT-4o (OpenAI)</em> pour résumer les changements détectés en langage naturel.</li>
+                                <li><strong>Interface :</strong> Dashboard sombre moderne avec timeline interactive des modifications et notifications en temps réel.</li>
+                            </ul>
+                            
+                            <p><strong>Résultats :</strong> Application full-stack déployée en production, capable de surveiller un nombre illimité de sites, de comparer les versions et de produire une analyse IA des changements toutes les 24h automatiquement.</p>
+                            <p><strong>Outils utilisés :</strong> Next.js 15, TypeScript, Tailwind CSS, Framer Motion, shadcn/ui, Firecrawl, OpenAI GPT-4o, Upstash Redis, Vercel.</p>
+                            
+                            <p style="margin-top: 15px; display: flex; gap: 10px; flex-wrap: wrap;">
+                                <a href="https://webwatch-oummlh390-temadangseraphins-projects.vercel.app/" target="_blank" style="display: inline-block; padding: 8px 15px; background-color: #7c3aed; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+                                    🔗 Voir le site
+                                </a>
+                                <a href="https://github.com/TEMADANGSERAPHIN/webwatch" target="_blank" style="display: inline-block; padding: 8px 15px; background-color: #24292e; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+                                    Voir sur GitHub
+                                </a>
+                            </p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="project-card">
                     <img src="EGaz.jpg" alt="Analyse Énergie Industrie" class="project-image">
                     <div class="project-content">
                         <h3>Analyse de la Dépendance Énergétique Industrielle (2012-2023)</h3>
